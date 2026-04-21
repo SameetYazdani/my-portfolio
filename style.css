@@ -1,0 +1,585 @@
+ body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+/* space between title and content */
+.section-title {
+  margin-bottom: 50px;
+}
+
+/* optional: make content breathe more */
+.about-container,
+.skills-grid,
+.project-container {
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: white;
+
+  text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px rgba(0,255,255,0.4);
+}
+
+
+
+/* 🌌 Animated stars */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Navbar */
+/* Right side contact icons */
+/* Navbar layout fix */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  gap: 50px;
+}
+
+/* Menu stays centered */
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ICON container (right side) */
+ .nav-icons {
+  display: flex;
+  gap: 12px;
+  position: absolute;
+  right: 40px;
+  align-items: center;
+}
+
+/* ICON BOX */
+.nav-icons a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgba(0,255,255,0.4);
+  border-radius: 8px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 16px;
+
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+/* HOVER EFFECT */
+.nav-icons a:hover {
+  color: cyan;
+  border-color: cyan;
+  box-shadow: 0 0 12px rgba(0,255,255,0.4);
+  transform: translateY(-2px);
+}
+
+ 
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* Container row */
+ .hero-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Resume button (base size reference) */
+ .btn {
+  height: 45px;
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid cyan;
+  color: cyan;
+  background: transparent;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-weight: 600;
+  transition: 0.3s;
+  box-sizing: border-box; /* IMPORTANT */
+}
+
+/* Social boxes = SAME HEIGHT AS BUTTON */
+ .social-btn {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0,255,255,0.4);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 18px;
+
+  transition: 0.3s;
+  box-sizing: border-box; /* IMPORTANT */
+}
+.social-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+/* Hover effects */
+.btn:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 15px cyan;
+}
+
+.social-btn:hover {
+  color: cyan;
+  border-color: cyan;
+  box-shadow: 0 0 15px rgba(0,255,255,0.5);
+  transform: translateY(-3px);
+}
+
+
+ .hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 65px;
+  margin: 0;
+  text-shadow: 0 0 20px cyan;
+}
+
+.hero h2{
+    font-size: 25px;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 16px;
+  opacity: 0.85;
+  max-width: 600px;
+}
+
+/* Glowing name */
+h1 {
+  font-size: 70px;
+  text-shadow: 0 0 20px cyan, 0 0 40px cyan;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Button */
+/* .btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: 2px solid cyan;
+  color: cyan;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+} */
+
+.btn:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 20px cyan;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(0,255,255,0.4);
+}
+/* Container */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+/* Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon border animation */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(45deg, cyan, transparent, cyan);
+  -webkit-mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Project image */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  border: 1px solid rgba(0,255,255,0.3);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+ 
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+/* Title */
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 14px;
+  border: 1px solid cyan;
+  color: cyan;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.buttons a:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 15px cyan;
+}
+/* About Layout */
+ .about-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 0 40px;
+  align-items: stretch; /* KEY FIX */
+}
+
+/* Main card takes full height */
+ .about-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 18px;
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+  line-height: 1.6;
+
+  height: 100%;
+  transition: 0.3s ease; /* IMPORTANT */
+}
+
+/* ADD SAME HOVER EFFECT */
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(0,255,255,0.25);
+}
+
+/* Right column stacks properly */
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+/* Equal distribution of height */
+.info-box {
+  flex: 1; /* KEY FIX → makes all 3 equal height */
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  padding: 12px 14px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Text cleanup */
+.info-box h3 {
+  margin: 0;
+  font-size: 14px;
+  color: cyan;
+}
+
+.info-box p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* Hover effect (soft premium feel) */
+.info-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px rgba(0,255,255,0.25);
+}
+
+ 
+ /* Skills layout */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+/* Skill card */
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+/* Hover glow */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+/* Skill row */
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin: 5px 0;
+}
+
+/* Bar background */
+.bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Filled bar */
+.bar span {
+  display: block;
+  height: 100%;
+  background: cyan;
+  box-shadow: 0 0 10px cyan;
+  border-radius: 10px;
+  transition: width 1.5s ease;
+} 
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0 40px;
+}
+
+/* Skill Box */
+.skill-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Neon glow hover */
+.skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+/* Title */
+.skill-box h3 {
+  margin-bottom: 10px;
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* List style */
+.skill-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-box ul li {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+/* Bullet glow */
+.skill-box ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: cyan;
+}
+.skill-box,
+.project-card,
+.about-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+* {
+  box-sizing: border-box;
+}
+ 
+
+/* 3 per row */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Video styling */
+.project-video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0,255,255,0.3);
+}
+
+/* Buttons */
+.project-buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 14px;
+  border: 1px solid cyan;
+  color: cyan;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.project-buttons a:hover {
+  background: cyan;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+ 
+
+@media (max-width: 768px) {
+  .nav-contact {
+    display: none; /* hide icons on small screens */
+  }
+}

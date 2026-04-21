@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="stars"></canvas>
+  <!-- Navbar -->
+  <nav>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+
+    <!-- ICONS RIGHT SIDE -->
+    <div class="nav-icons">
+
+      <a href="mailto:sameetyazdani@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/sameet-yazdani-a6a526268/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/SameetYazdani" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1 id="typing"></h1>
+
+    <h2 class="subtitle">
+      Full Stack Web Developer <br> Frontend with React.js <br> Backend with PHP & Laravel
+    </h2>
+
+    <div class="hero-actions">
+
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+
+      <div class="about-card">
+        <p>
+          I am a passionate Web Developer focused on creating modern and responsive web applications.
+          I specialize in frontend development using React.js and backend development using PHP & Laravel.
+        </p>
+
+        <p>
+          I enjoy building clean UI, solving problems, and continuously learning new technologies.
+        </p>
+      </div>
+
+      <div class="about-info">
+        <div class="info-box">
+          <h3>🎓 Education</h3>
+          <p>BS Information Technology</p>
+        </div>
+
+        <div class="info-box">
+          <h3>💻 Experience</h3>
+          <p>Web App Developer --- Devcastle</p>
+          <p>Frontend & Backend Projects --- Freelance</p>
+        </div>
+
+        <div class="info-box">
+          <h3>📍 Location</h3>
+          <p>Lahore, Pakistan</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills & Technologies</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-box">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C / C++</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>HTML5, CSS, Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Databases</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>SQL Queries</li>
+          <li>Basic Optimization</li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Backend & Frameworks</h3>
+        <ul>
+          <li>Laravel</li>
+          <li>React.js</li>
+          <li>RESTful API </li>
+        </ul>
+      </div>
+
+      <div class="skill-box">
+        <h3>Software Concepts</h3>
+        <ul>
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Data Structures & Algorithms</li>
+          <li>Agile Basics</li>
+          <li>SDLC</li>
+          <li>MVC Architecture</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-container">
+
+      <!-- PROJECT 1 -->
+      <div class="project-card">
+
+        <video autoplay muted loop playsinline class="project-video">
+          <source src="videos/project1.mp4" type="video/mp4">
+        </video>
+
+        <h3>Travel Guide Website</h3>
+        <p>An online travel booking web app built with HTML, CSS, JS, AJAX, PHP & MySQL</p>
+        
+        <div class="project-buttons">
+
+          <a href="https://github.com/SameetYazdani/travel-guide-website" target="_blank"> 
+          <i class="fa-brands fa-github"></i> Code</a>
+        </div>
+
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="project-card">
+
+        <video autoplay muted loop playsinline class="project-video">
+          <source src="videos/project2.mp4" type="video/mp4">
+        </video>
+
+        <h3>Admin Panel</h3>
+        <p>Admin dashboard to manage travel data dynamically (CRUD operations)</p>
+
+        <div class="project-buttons">
+
+          <a href="https://github.com/SameetYazdani/admin-panel---travel-website" target="_blank">
+          <i class="fa-brands fa-github"></i> Code</a>
+          
+        </div>
+
+      </div>
+
+      <!-- PROJECT 3 (ADD THIS)
+    <div class="project-card">
+
+      <video autoplay muted loop playsinline class="project-video">
+        <source src="videos/project3.mp4" type="video/mp4">
+      </video>
+
+      <h3>Todo App</h3>
+      <p>Task manager with JavaScript and local storage</p>
+
+      <div class="project-buttons">
+         
+        <a href="#">Source Code</a>
+      </div>
+
+    </div> -->
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
